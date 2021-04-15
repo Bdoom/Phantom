@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/phantom.dir/main.cpp.o CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o -o phantom  -lSDL2main -lSDL2 
