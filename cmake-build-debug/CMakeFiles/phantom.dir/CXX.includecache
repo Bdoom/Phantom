@@ -6,13 +6,39 @@
 
 #IncludeRegexTransform: 
 
-../Source/Public/Sprite.h
+../Source/Public/Engine.h
+Logger.h
+../Source/Public/Logger.h
+SDL2/SDL.h
+-
 
-/home/decil/CLionProjects/phantom/Source/Private/Sprite.cpp
-Sprite.h
-/home/decil/CLionProjects/phantom/Source/Private/Sprite.h
+../Source/Public/Logger.h
+string
+-
+fstream
+-
+iostream
+-
+chrono
+-
+time.h
+-
+ctime
+-
+
+/home/decil/CLionProjects/phantom/Source/Private/Engine.cpp
+Engine.h
+/home/decil/CLionProjects/phantom/Source/Private/Engine.h
+SDL2/SDL.h
+-
 GL/glew.h
 -
 GL/gl.h
+-
+SDL2/SDL_video.h
+-
+filesystem
+-
+cassert
 -
 

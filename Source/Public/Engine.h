@@ -41,6 +41,7 @@ private:
     void Update();
     void CheckInput();
     void Draw();
+    bool LoadShaders();
 
     Logger* logger;
 

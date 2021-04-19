@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/decil/CLionProjects/phantom/Source/Public
 
-CXX_FLAGS = -g -std=gnu++14
+CXX_FLAGS = -g -std=gnu++17
 

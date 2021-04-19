@@ -93,9 +93,6 @@
 		<Unit filename="/home/decil/CLionProjects/phantom/Source/Private/Vector3.cpp">
 			<Option target="phantom"/>
 		</Unit>
-		<Unit filename="/home/decil/CLionProjects/phantom/Source/Private/Vector3.h">
-			<Option target="phantom"/>
-		</Unit>
 		<Unit filename="/home/decil/CLionProjects/phantom/main.cpp">
 			<Option target="phantom"/>
 		</Unit>

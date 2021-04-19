@@ -7,3 +7,9 @@ sudo apt-get install libglew-dev glew-utils
 
 Install glm:
 sudo apt-get install libglm-dev
+
+Install libsdl2-image:
+sudo apt-get install libsdl2-image-2.0-0 libsdl2-image-dev
+
+https://packages.debian.org/sid/libsdl2-image-dev
+https://packages.debian.org/stretch/libsdl2-image-2.0-0
