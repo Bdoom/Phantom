@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/phantom.dir/main.cpp.o CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o -o phantom  -lSDL2main -lSDL2 
+/usr/bin/c++ -g CMakeFiles/phantom.dir/main.cpp.o CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.o CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.o -o phantom  -lSDL2main -lSDL2 -lGLEW -lGLU -lGL 

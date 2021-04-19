@@ -93,12 +93,12 @@ clean: CMakeFiles/phantom.dir/clean
 CMakeFiles/phantom.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phantom.dir/build.make CMakeFiles/phantom.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phantom.dir/build.make CMakeFiles/phantom.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/decil/CLionProjects/phantom/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target phantom"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/decil/CLionProjects/phantom/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target phantom"
 .PHONY : CMakeFiles/phantom.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/phantom.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/decil/CLionProjects/phantom/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/decil/CLionProjects/phantom/cmake-build-debug/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/phantom.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/decil/CLionProjects/phantom/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/phantom.dir/rule

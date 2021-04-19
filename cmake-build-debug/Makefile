@@ -169,6 +169,60 @@ Source/Private/Engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/phantom.dir/build.make CMakeFiles/phantom.dir/Source/Private/Engine.cpp.s
 .PHONY : Source/Private/Engine.cpp.s
 
+Source/Private/Sprite.o: Source/Private/Sprite.cpp.o
+
+.PHONY : Source/Private/Sprite.o
+
+# target to build an object file
+Source/Private/Sprite.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/phantom.dir/build.make CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.o
+.PHONY : Source/Private/Sprite.cpp.o
+
+Source/Private/Sprite.i: Source/Private/Sprite.cpp.i
+
+.PHONY : Source/Private/Sprite.i
+
+# target to preprocess a source file
+Source/Private/Sprite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/phantom.dir/build.make CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.i
+.PHONY : Source/Private/Sprite.cpp.i
+
+Source/Private/Sprite.s: Source/Private/Sprite.cpp.s
+
+.PHONY : Source/Private/Sprite.s
+
+# target to generate assembly for a file
+Source/Private/Sprite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/phantom.dir/build.make CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.s
+.PHONY : Source/Private/Sprite.cpp.s
+
+Source/Private/Vector3.o: Source/Private/Vector3.cpp.o
+
+.PHONY : Source/Private/Vector3.o
+
+# target to build an object file
+Source/Private/Vector3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/phantom.dir/build.make CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.o
+.PHONY : Source/Private/Vector3.cpp.o
+
+Source/Private/Vector3.i: Source/Private/Vector3.cpp.i
+
+.PHONY : Source/Private/Vector3.i
+
+# target to preprocess a source file
+Source/Private/Vector3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/phantom.dir/build.make CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.i
+.PHONY : Source/Private/Vector3.cpp.i
+
+Source/Private/Vector3.s: Source/Private/Vector3.cpp.s
+
+.PHONY : Source/Private/Vector3.s
+
+# target to generate assembly for a file
+Source/Private/Vector3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/phantom.dir/build.make CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.s
+.PHONY : Source/Private/Vector3.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -208,6 +262,12 @@ help:
 	@echo "... Source/Private/Engine.o"
 	@echo "... Source/Private/Engine.i"
 	@echo "... Source/Private/Engine.s"
+	@echo "... Source/Private/Sprite.o"
+	@echo "... Source/Private/Sprite.i"
+	@echo "... Source/Private/Sprite.s"
+	@echo "... Source/Private/Vector3.o"
+	@echo "... Source/Private/Vector3.i"
+	@echo "... Source/Private/Vector3.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

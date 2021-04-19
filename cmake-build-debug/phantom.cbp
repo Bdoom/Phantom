@@ -87,13 +87,13 @@
 		<Unit filename="/home/decil/CLionProjects/phantom/Source/Private/Engine.cpp">
 			<Option target="phantom"/>
 		</Unit>
-		<Unit filename="/home/decil/CLionProjects/phantom/Source/Public/Engine.h">
+		<Unit filename="/home/decil/CLionProjects/phantom/Source/Private/Sprite.cpp">
 			<Option target="phantom"/>
 		</Unit>
-		<Unit filename="/home/decil/CLionProjects/phantom/Source/Public/IniReader.h">
+		<Unit filename="/home/decil/CLionProjects/phantom/Source/Private/Vector3.cpp">
 			<Option target="phantom"/>
 		</Unit>
-		<Unit filename="/home/decil/CLionProjects/phantom/Source/Public/Logger.h">
+		<Unit filename="/home/decil/CLionProjects/phantom/Source/Private/Vector3.h">
 			<Option target="phantom"/>
 		</Unit>
 		<Unit filename="/home/decil/CLionProjects/phantom/main.cpp">

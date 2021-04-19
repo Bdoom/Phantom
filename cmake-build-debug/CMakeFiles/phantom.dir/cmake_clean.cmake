@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o"
+  "CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.o"
+  "CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.o"
   "CMakeFiles/phantom.dir/main.cpp.o"
   "phantom"
   "phantom.pdb"

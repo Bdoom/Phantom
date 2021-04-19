@@ -6,6 +6,12 @@
 #define PHANTOM_ENGINE_H
 
 #include "Logger.h"
+#include <SDL2/SDL.h>
+
+enum class EGameState {
+    Playing,
+    Quitting
+};
 
 class Engine {
 
@@ -34,8 +40,13 @@ public:
 private:
     void Update();
     void CheckInput();
+    void Draw();
 
     Logger* logger;
+
+    SDL_Window* MainWindow;
+
+    EGameState GameState;
 
 };
 

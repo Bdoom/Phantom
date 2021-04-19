@@ -6,49 +6,13 @@
 
 #IncludeRegexTransform: 
 
-../Source/Public/Engine.h
-Logger.h
-../Source/Public/Logger.h
+../Source/Public/Sprite.h
 
-../Source/Public/Logger.h
-string
+/home/decil/CLionProjects/phantom/Source/Private/Sprite.cpp
+Sprite.h
+/home/decil/CLionProjects/phantom/Source/Private/Sprite.h
+GL/glew.h
 -
-fstream
+GL/gl.h
 -
-iostream
--
-chrono
--
-time.h
--
-ctime
--
-
-/home/decil/CLionProjects/phantom/Source/Private/Engine.cpp
-../Public/Engine.h
-/home/decil/CLionProjects/phantom/Source/Public/Engine.h
-SDL2/SDL.h
-/home/decil/CLionProjects/phantom/Source/Private/SDL2/SDL.h
-
-/home/decil/CLionProjects/phantom/Source/Public/Engine.h
-Logger.h
-/home/decil/CLionProjects/phantom/Source/Public/Logger.h
-
-/home/decil/CLionProjects/phantom/Source/Public/Logger.h
-string
--
-fstream
--
-iostream
--
-chrono
--
-time.h
--
-ctime
--
-
-/home/decil/CLionProjects/phantom/main.cpp
-Engine.h
-/home/decil/CLionProjects/phantom/Engine.h
 

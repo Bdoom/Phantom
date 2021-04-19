@@ -14,9 +14,6 @@
 #include <time.h>
 #include <ctime>
 
-using namespace std;
-
-
 #define RESET   "\033[0m"
 #define BLACK   "\033[30m"      /* Black */
 #define RED     "\033[31m"      /* Red */
@@ -43,6 +40,7 @@ using namespace std;
 
 enum class LogCategory {
     None,
+    Initialization,
     Engine
 };
 
@@ -62,48 +60,59 @@ public:
         LogLevel = InLogLevel;
     }
 
+    ~Logger() {}
+
 private:
 
-    string GetLogTypeAsString(unsigned int LogType) {
-        switch (LogType) {
-            case LOG_TYPE_LEVEL_ALL:
-                return "[ALL]";
-            case LOG_TYPE_LEVEL_ERROR:
-                return string(RED) + "[ERROR]" + RESET;
-            case LOG_TYPE_LEVEL_INFO:
-                return string(GREEN) + "[INFO]" + RESET;
-            case LOG_TYPE_LEVEL_WARNING:
-                return string(YELLOW) + "[WARNING]" + RESET;
-            case LOG_TYPE_LEVEL_DEBUG:
-                return string(BLUE) + "[DEBUG]" + RESET;
+    std::string GetLogTypeAsString(unsigned int LogType, bool NoColor = false) {
+        if (!NoColor)
+        {
+            switch (LogType)
+            {
+                case LOG_TYPE_LEVEL_ALL:
+                    return "[ALL]";
+                case LOG_TYPE_LEVEL_ERROR:
+                    return std::string(RED) + "[ERROR]" + RESET;
+                case LOG_TYPE_LEVEL_INFO:
+                    return std::string(GREEN) + "[INFO]" + RESET;
+                case LOG_TYPE_LEVEL_WARNING:
+                    return std::string(YELLOW) + "[WARNING]" + RESET;
+                case LOG_TYPE_LEVEL_DEBUG:
+                    return std::string(BLUE) + "[DEBUG]" + RESET;
 
-            default:
-                return string(BOLDWHITE) + "[*]" + RESET;
+                default:
+                    return std::string(BOLDWHITE) + "[*]" + RESET;
+            }
         }
+        else
+        {
+            switch (LogType) {
+                case LOG_TYPE_LEVEL_ALL:
+                    return "[ALL]";
+                case LOG_TYPE_LEVEL_ERROR:
+                    return "[ERROR]";
+                case LOG_TYPE_LEVEL_INFO:
+                    return "[INFO]";
+                case LOG_TYPE_LEVEL_WARNING:
+                    return "[WARNING]";
+                case LOG_TYPE_LEVEL_DEBUG:
+                    return "[DEBUG]";
+
+                default:
+                    return "[*]";
+            }
+        }
+
     }
 
-    string GetTime(void) {
-        std::time_t now = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
-        struct tm timeinfo;
-#ifdef _WIN32
-        ::localtime_s(&timeinfo, &now);
-#elif _WIN64
-        ::localtime_s(&timeinfo, &now);
-#else
-        localtime(&now);
-#endif
-        char buffer[32];
-        std::strftime(buffer, 32, "%m/%d/%Y - %H:%M:%S", &timeinfo);
-
-        return buffer;
-    }
-
-    string GetLogCategoryAsString(LogCategory LogCategory) {
+    std::string GetLogCategoryAsString(LogCategory LogCategory) {
         switch (LogCategory) {
             case LogCategory::None:
                 return "(None)";
             case LogCategory::Engine:
                 return "(Engine)";
+            case LogCategory::Initialization:
+                return "(Initialization)";
 
             default:
                 return "(*)";
@@ -125,26 +134,33 @@ public:
 
 private:
 
-    void LogToFile(string MessageToLog) {
-        ofstream file;
-        file.open("phantom.log", ios_base::app);
-        file << MessageToLog << endl;
+    void LogToFile(std::string MessageToLog) {
+        std::ofstream file;
+        file.open("phantom.log", std::ios_base::app);
+        file << MessageToLog << std::endl;
         file.close();
     }
 
 public:
 
-    void Log(string MessageToLog, unsigned int LogType, LogCategory LogCategory) {
+    void Log(std::string MessageToLog, unsigned int LogType, LogCategory LogCategory = LogCategory::None) {
         if ((LogLevel & LogType) == 0)
             return;
 
-        string newString = "";
+        std::string newString = "";
         newString += GetLogTypeAsString(LogType) + " - ";
         newString += GetLogCategoryAsString(LogCategory) + ": ";
         newString += MessageToLog;
 
-        cout << newString << endl;
-        LogToFile(MessageToLog);
+        std::cout << newString << std::endl;
+
+        newString = "";
+        newString += GetLogTypeAsString(LogType, true) + " - ";
+        newString += GetLogCategoryAsString(LogCategory) + ": ";
+        newString += MessageToLog;
+
+
+        LogToFile(newString);
     }
 
 };

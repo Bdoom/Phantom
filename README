@@ -1,0 +1,9 @@
+
+Please install SDL and opengl:
+sudo apt-get install libsdl2-dev
+
+Install glew:
+sudo apt-get install libglew-dev glew-utils
+
+Install glm:
+sudo apt-get install libglm-dev
