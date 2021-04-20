@@ -78,9 +78,7 @@ void Engine::Start() {
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
     glEnable(GL_DEBUG_OUTPUT);
-    
 
-    //glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
     glClearColor(1,1,1, 1);
 
@@ -145,6 +143,19 @@ void Engine::CheckInput() {
                 GetLogger()->Log(buffer, LOG_TYPE_LEVEL_INFO);
                 break;
 
+            case SDL_KEYDOWN:
+                //printf("key: %s\n", SDL_GetKeyName(event.key.keysym.sym)); // not sure what 'keysym' is or 'keysym.sym'
+                //printf("%d", event.key.keysym.sym);
+                if (event.key.keysym.sym == SDLK_F1)
+                {
+                    ToggleWireframe();
+                }
+                break;
+
+            default:
+                std::string evtStr = "Event type: " + std::to_string(event.type);
+                GetLogger()->Log(evtStr, LOG_TYPE_LEVEL_INFO);
+                break;
 
         }
     }
@@ -158,6 +169,7 @@ void Engine::Quit() {
 
 Engine::Engine() {
     GameState = EGameState::Playing;
+    renderMode = RenderMode::Fill;
 }
 
 Engine::~Engine() {
@@ -168,18 +180,24 @@ void Engine::Draw() {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     // VAO - vertex array object
-    // generate and bind vertex array object
+    // vao stores the attributes set in glVertexAttribPointer() and glEnableVertexAttribArray() and glDisableVertexAttribArray() functions
+    // the VAO could be reused for multiple different configurations, using one VAO.
+    // this is basically a configuration object which defines the spacing and order of how the data inside of a vbo is stored.
     GLuint VAO;
     glCreateVertexArrays(1, &VAO);
     glBindVertexArray(VAO);
 
     // VBO generation - vertex buffer object
+    // contains the actual vertices and vertex data.
     GLuint VBO;
     glGenBuffers(1, &VBO);
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(verticies), verticies, GL_STATIC_DRAW);
 
     // ebo - element buffer object
+    // tells opengl the order in which to draw the vertices, by the indices set in the EBO object.
+    // when we bind the EBO, the VAO that is currently in use will also store our EBO as the current EBO object.
+    // so if we unbind the VAO, it will keep that EBO, and we can bind a new VAO
     GLuint EBO;
     glGenBuffers(1, &EBO);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
@@ -196,13 +214,15 @@ void Engine::Draw() {
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLvoid*)offsetof(Vertex, texcoord));
     glEnableVertexAttribArray(2);
 
-
-
     glUseProgram(program);
-    glBindVertexArray(VAO);
 
     // draw to screen
+    // glDrawElements requires a bound EBO - element array buffer object.
     glDrawElements(GL_TRIANGLES, numOfIndicies + 1, GL_UNSIGNED_INT, 0);
+
+    // glDrawArrays takes the opengl primitive type we want to draw, and then the starting index in the vertex array
+    // and then the last parameter is the number of number of vertices we would like to draw.
+    //glDrawArrays(GL_TRIANGLES, 0, 3);
 
     // unbind vert array
     glBindVertexArray(0);
@@ -268,4 +288,16 @@ bool Engine::LoadShader(GLuint program, const std::filesystem::path path, GLenum
     glDeleteShader(shader);
     
     return true;
+}
+
+void Engine::ToggleWireframe() {
+    if(renderMode == RenderMode::Fill) {
+        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+        renderMode = RenderMode::WireFrame;
+    }
+    else if (renderMode == RenderMode::WireFrame)
+    {
+        glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+        renderMode = RenderMode::Fill;
+    }
 }

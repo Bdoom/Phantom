@@ -16,6 +16,12 @@ enum class EGameState {
     Quitting
 };
 
+enum class RenderMode
+{
+    Fill,
+    WireFrame
+};
+
 class Engine {
 
 public:
@@ -25,6 +31,10 @@ public:
 
     void Start();
     void Quit();
+    void ToggleWireframe();
+
+    RenderMode renderMode;
+
 
     Logger* GetLogger()
     {
@@ -45,6 +55,7 @@ private:
     void CheckInput();
     void Draw();
     bool LoadShader(GLuint program, const std::filesystem::path path, GLenum shaderType);
+
 
     Logger* logger;
     SDL_Window* MainWindow;
