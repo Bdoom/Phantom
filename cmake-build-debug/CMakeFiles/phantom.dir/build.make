@@ -62,10 +62,10 @@ RM = /home/decil/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.6693.114/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/decil/CLionProjects/phantom
+CMAKE_SOURCE_DIR = /home/decil/CLionProjects/Phantom
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/decil/CLionProjects/phantom/cmake-build-debug
+CMAKE_BINARY_DIR = /home/decil/CLionProjects/Phantom/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/phantom.dir/depend.make
@@ -78,55 +78,55 @@ include CMakeFiles/phantom.dir/flags.make
 
 CMakeFiles/phantom.dir/main.cpp.o: CMakeFiles/phantom.dir/flags.make
 CMakeFiles/phantom.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/decil/CLionProjects/phantom/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/phantom.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phantom.dir/main.cpp.o -c /home/decil/CLionProjects/phantom/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/decil/CLionProjects/Phantom/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/phantom.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phantom.dir/main.cpp.o -c /home/decil/CLionProjects/Phantom/main.cpp
 
 CMakeFiles/phantom.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/phantom.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/decil/CLionProjects/phantom/main.cpp > CMakeFiles/phantom.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/decil/CLionProjects/Phantom/main.cpp > CMakeFiles/phantom.dir/main.cpp.i
 
 CMakeFiles/phantom.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phantom.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/decil/CLionProjects/phantom/main.cpp -o CMakeFiles/phantom.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/decil/CLionProjects/Phantom/main.cpp -o CMakeFiles/phantom.dir/main.cpp.s
 
 CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o: CMakeFiles/phantom.dir/flags.make
 CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o: ../Source/Private/Engine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/decil/CLionProjects/phantom/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o -c /home/decil/CLionProjects/phantom/Source/Private/Engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/decil/CLionProjects/Phantom/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o -c /home/decil/CLionProjects/Phantom/Source/Private/Engine.cpp
 
 CMakeFiles/phantom.dir/Source/Private/Engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/phantom.dir/Source/Private/Engine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/decil/CLionProjects/phantom/Source/Private/Engine.cpp > CMakeFiles/phantom.dir/Source/Private/Engine.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/decil/CLionProjects/Phantom/Source/Private/Engine.cpp > CMakeFiles/phantom.dir/Source/Private/Engine.cpp.i
 
 CMakeFiles/phantom.dir/Source/Private/Engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phantom.dir/Source/Private/Engine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/decil/CLionProjects/phantom/Source/Private/Engine.cpp -o CMakeFiles/phantom.dir/Source/Private/Engine.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/decil/CLionProjects/Phantom/Source/Private/Engine.cpp -o CMakeFiles/phantom.dir/Source/Private/Engine.cpp.s
 
 CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.o: CMakeFiles/phantom.dir/flags.make
 CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.o: ../Source/Private/Sprite.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/decil/CLionProjects/phantom/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.o -c /home/decil/CLionProjects/phantom/Source/Private/Sprite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/decil/CLionProjects/Phantom/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.o -c /home/decil/CLionProjects/Phantom/Source/Private/Sprite.cpp
 
 CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/decil/CLionProjects/phantom/Source/Private/Sprite.cpp > CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/decil/CLionProjects/Phantom/Source/Private/Sprite.cpp > CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.i
 
 CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/decil/CLionProjects/phantom/Source/Private/Sprite.cpp -o CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/decil/CLionProjects/Phantom/Source/Private/Sprite.cpp -o CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.s
 
 CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.o: CMakeFiles/phantom.dir/flags.make
 CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.o: ../Source/Private/Vector3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/decil/CLionProjects/phantom/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.o -c /home/decil/CLionProjects/phantom/Source/Private/Vector3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/decil/CLionProjects/Phantom/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.o -c /home/decil/CLionProjects/Phantom/Source/Private/Vector3.cpp
 
 CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/decil/CLionProjects/phantom/Source/Private/Vector3.cpp > CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/decil/CLionProjects/Phantom/Source/Private/Vector3.cpp > CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.i
 
 CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/decil/CLionProjects/phantom/Source/Private/Vector3.cpp -o CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/decil/CLionProjects/Phantom/Source/Private/Vector3.cpp -o CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.s
 
 # Object files for target phantom
 phantom_OBJECTS = \
@@ -144,7 +144,7 @@ phantom: CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.o
 phantom: CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.o
 phantom: CMakeFiles/phantom.dir/build.make
 phantom: CMakeFiles/phantom.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/decil/CLionProjects/phantom/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable phantom"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/decil/CLionProjects/Phantom/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable phantom"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/phantom.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -157,6 +157,6 @@ CMakeFiles/phantom.dir/clean:
 .PHONY : CMakeFiles/phantom.dir/clean
 
 CMakeFiles/phantom.dir/depend:
-	cd /home/decil/CLionProjects/phantom/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/decil/CLionProjects/phantom /home/decil/CLionProjects/phantom /home/decil/CLionProjects/phantom/cmake-build-debug /home/decil/CLionProjects/phantom/cmake-build-debug /home/decil/CLionProjects/phantom/cmake-build-debug/CMakeFiles/phantom.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/decil/CLionProjects/Phantom/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/decil/CLionProjects/Phantom /home/decil/CLionProjects/Phantom /home/decil/CLionProjects/Phantom/cmake-build-debug /home/decil/CLionProjects/Phantom/cmake-build-debug /home/decil/CLionProjects/Phantom/cmake-build-debug/CMakeFiles/phantom.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/phantom.dir/depend
 

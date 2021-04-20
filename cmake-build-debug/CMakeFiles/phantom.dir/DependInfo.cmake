@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/decil/CLionProjects/phantom/Source/Private/Engine.cpp" "/home/decil/CLionProjects/phantom/cmake-build-debug/CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o"
-  "/home/decil/CLionProjects/phantom/Source/Private/Sprite.cpp" "/home/decil/CLionProjects/phantom/cmake-build-debug/CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.o"
-  "/home/decil/CLionProjects/phantom/Source/Private/Vector3.cpp" "/home/decil/CLionProjects/phantom/cmake-build-debug/CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.o"
-  "/home/decil/CLionProjects/phantom/main.cpp" "/home/decil/CLionProjects/phantom/cmake-build-debug/CMakeFiles/phantom.dir/main.cpp.o"
+  "/home/decil/CLionProjects/Phantom/Source/Private/Engine.cpp" "/home/decil/CLionProjects/Phantom/cmake-build-debug/CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o"
+  "/home/decil/CLionProjects/Phantom/Source/Private/Sprite.cpp" "/home/decil/CLionProjects/Phantom/cmake-build-debug/CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.o"
+  "/home/decil/CLionProjects/Phantom/Source/Private/Vector3.cpp" "/home/decil/CLionProjects/Phantom/cmake-build-debug/CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.o"
+  "/home/decil/CLionProjects/Phantom/main.cpp" "/home/decil/CLionProjects/Phantom/cmake-build-debug/CMakeFiles/phantom.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

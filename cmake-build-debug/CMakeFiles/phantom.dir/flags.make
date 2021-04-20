@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/decil/CLionProjects/phantom/Source/Public
+CXX_INCLUDES = -I/home/decil/CLionProjects/Phantom/Source/Public
 
 CXX_FLAGS = -g -std=gnu++17
 

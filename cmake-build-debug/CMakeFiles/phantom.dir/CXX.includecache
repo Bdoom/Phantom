@@ -9,7 +9,13 @@
 ../Source/Public/Engine.h
 Logger.h
 ../Source/Public/Logger.h
+Sprite.h
+../Source/Public/Sprite.h
 SDL2/SDL.h
+-
+filesystem
+-
+GL/glew.h
 -
 
 ../Source/Public/Logger.h
@@ -26,9 +32,11 @@ time.h
 ctime
 -
 
-/home/decil/CLionProjects/phantom/Source/Private/Engine.cpp
+../Source/Public/Sprite.h
+
+/home/decil/CLionProjects/Phantom/Source/Private/Engine.cpp
 Engine.h
-/home/decil/CLionProjects/phantom/Source/Private/Engine.h
+/home/decil/CLionProjects/Phantom/Source/Private/Engine.h
 SDL2/SDL.h
 -
 GL/glew.h
@@ -39,6 +47,6 @@ SDL2/SDL_video.h
 -
 filesystem
 -
-cassert
+glm/glm.hpp
 -
 

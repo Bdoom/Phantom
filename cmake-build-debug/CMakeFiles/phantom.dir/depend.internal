@@ -4,14 +4,16 @@
 CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o
  ../Source/Public/Engine.h
  ../Source/Public/Logger.h
- /home/decil/CLionProjects/phantom/Source/Private/Engine.cpp
+ ../Source/Public/Sprite.h
+ /home/decil/CLionProjects/Phantom/Source/Private/Engine.cpp
 CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.o
  ../Source/Public/Sprite.h
- /home/decil/CLionProjects/phantom/Source/Private/Sprite.cpp
+ /home/decil/CLionProjects/Phantom/Source/Private/Sprite.cpp
 CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.o
  ../Source/Public/Vector3.h
- /home/decil/CLionProjects/phantom/Source/Private/Vector3.cpp
+ /home/decil/CLionProjects/Phantom/Source/Private/Vector3.cpp
 CMakeFiles/phantom.dir/main.cpp.o
  ../Source/Public/Engine.h
  ../Source/Public/Logger.h
- /home/decil/CLionProjects/phantom/main.cpp
+ ../Source/Public/Sprite.h
+ /home/decil/CLionProjects/Phantom/main.cpp

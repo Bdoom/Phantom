@@ -3,6 +3,7 @@
 
 CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o: ../Source/Public/Engine.h
 CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o: ../Source/Public/Logger.h
+CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o: ../Source/Public/Sprite.h
 CMakeFiles/phantom.dir/Source/Private/Engine.cpp.o: ../Source/Private/Engine.cpp
 
 CMakeFiles/phantom.dir/Source/Private/Sprite.cpp.o: ../Source/Public/Sprite.h
@@ -13,5 +14,6 @@ CMakeFiles/phantom.dir/Source/Private/Vector3.cpp.o: ../Source/Private/Vector3.c
 
 CMakeFiles/phantom.dir/main.cpp.o: ../Source/Public/Engine.h
 CMakeFiles/phantom.dir/main.cpp.o: ../Source/Public/Logger.h
+CMakeFiles/phantom.dir/main.cpp.o: ../Source/Public/Sprite.h
 CMakeFiles/phantom.dir/main.cpp.o: ../main.cpp
 

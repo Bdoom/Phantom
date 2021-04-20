@@ -6,7 +6,10 @@
 #define PHANTOM_ENGINE_H
 
 #include "Logger.h"
+#include "Sprite.h"
 #include <SDL2/SDL.h>
+#include <filesystem>
+#include <GL/glew.h>
 
 enum class EGameState {
     Playing,
@@ -41,13 +44,12 @@ private:
     void Update();
     void CheckInput();
     void Draw();
-    bool LoadShaders();
+    bool LoadShader(GLuint program, const std::filesystem::path path, GLenum shaderType);
 
     Logger* logger;
-
     SDL_Window* MainWindow;
-
     EGameState GameState;
+    GLuint program;
 
 };
 

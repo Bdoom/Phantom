@@ -41,18 +41,20 @@
 enum class LogCategory {
     None,
     Initialization,
+    Shader_Initialization,
     Engine
 };
 
 class Logger {
 
-    unsigned int LogLevel : 5;
+    unsigned int LogLevel : 8;
 
 
 public:
+
     Logger()
     {
-
+        LogLevel = LOG_TYPE_LEVEL_ALL;
     }
 
     Logger(unsigned int InLogLevel)
@@ -113,6 +115,8 @@ private:
                 return "(Engine)";
             case LogCategory::Initialization:
                 return "(Initialization)";
+            case LogCategory::Shader_Initialization:
+                return "(Shader_Initialization)";
 
             default:
                 return "(*)";
@@ -134,18 +138,26 @@ public:
 
 private:
 
-    void LogToFile(std::string MessageToLog) {
+    bool LogToFile(std::string MessageToLog) {
         std::ofstream file;
         file.open("phantom.log", std::ios_base::app);
+
+        if (!file.is_open())
+        {
+            return false;
+        }
+
         file << MessageToLog << std::endl;
         file.close();
+
+        return true;
     }
 
 public:
 
-    void Log(std::string MessageToLog, unsigned int LogType, LogCategory LogCategory = LogCategory::None) {
+    bool Log(std::string MessageToLog, unsigned int LogType, LogCategory LogCategory = LogCategory::None) {
         if ((LogLevel & LogType) == 0)
-            return;
+            return false;
 
         std::string newString = "";
         newString += GetLogTypeAsString(LogType) + " - ";
@@ -160,7 +172,7 @@ public:
         newString += MessageToLog;
 
 
-        LogToFile(newString);
+        return LogToFile(newString);
     }
 
 };

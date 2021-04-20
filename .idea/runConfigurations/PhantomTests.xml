@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="PhantomTests" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$/PhantomTests" PASS_PARENT_ENVS_2="true" PROJECT_NAME="phantom" TARGET_NAME="PhantomTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="phantom" RUN_TARGET_NAME="PhantomTests">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

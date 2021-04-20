@@ -13,3 +13,11 @@ sudo apt-get install libsdl2-image-2.0-0 libsdl2-image-dev
 
 https://packages.debian.org/sid/libsdl2-image-dev
 https://packages.debian.org/stretch/libsdl2-image-2.0-0
+
+To enable Catch2 testing:
+$ git clone https://github.com/catchorg/Catch2.git
+$ cd Catch2
+$ cmake -Bbuild -H. -DBUILD_TESTING=OFF
+$ sudo cmake --build build/ --target install
+
+Read more here: https://github.com/catchorg/Catch2/blob/devel/docs/cmake-integration.md#cmake-target
